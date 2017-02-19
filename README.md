@@ -11,4 +11,4 @@ The App provides quick reference to the follwing areas :
 
 All the four areas has the English, Malayalam translations and voice pronunciations. A tap on each word will spell out the word in malayalam language.
 
-Updated Code Amma Malayalam v2.0 will be released soon.
+Updated version for Amma Malayalam v2.0 will be released soon.
