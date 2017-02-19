@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="com.example.android.miwok.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="About Developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dev"
+        style="@style/CategoryStyle"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_colors"
+        style="@style/CategoryStyle"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/developer"
+        android:id="@+id/imageButton2"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/phrases"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/speech"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignLeft="@+id/familyico"
+        android:layout_alignStart="@+id/familyico" />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:text="@string/category_phrases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        style="@style/CategoryStyle"
+        android:layout_alignBaseline="@+id/colors"
+        android:layout_alignBottom="@+id/colors"
+        android:layout_alignRight="@+id/family"
+        android:layout_alignEnd="@+id/family" />
+
+    <TextView
+        android:id="@+id/family"
+        android:text="@string/category_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/CategoryStyle"
+        android:layout_below="@+id/familyico"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/numbers"
+        android:text="@string/category_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CategoryStyle"
+        android:layout_alignBaseline="@+id/family"
+        android:layout_alignBottom="@+id/family"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/family"
+        android:id="@+id/familyico"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dev"
+        android:layout_toEndOf="@+id/dev" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/numbers"
+        android:id="@+id/number_img"
+        android:layout_above="@+id/numbers"
+        android:layout_toLeftOf="@+id/dev"
+        android:layout_toStartOf="@+id/dev" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/colorz"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/numbers"
+        android:layout_alignLeft="@+id/number_img"
+        android:layout_alignStart="@+id/number_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
+</RelativeLayout>
