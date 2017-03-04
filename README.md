@@ -3,7 +3,7 @@ Amma Malayalam v1.0
 
 This app displays lists of vocabulary words for the user to learn the Malayalam language.
 
-The App provides quick reference to the follwing areas :
+The App provides quick reference to the following areas :
 --> Vocabulary of Numbers 
 --> Vocabulary of Family members and Family names.
 --> Vocabulary of Colors
